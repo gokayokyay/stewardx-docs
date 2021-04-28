@@ -1,19 +1,19 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'StewardX',
+  tagline: 'Your new friendly scheduler',
+  url: 'https://stewardx.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'gokayokyay', // Usually your GitHub org/user name.
+  projectName: 'stewardx', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'StewardX',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'StewardX Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -25,7 +25,7 @@ module.exports = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/gokayokyay/stewardx',
           label: 'GitHub',
           position: 'right',
         },
