@@ -145,6 +145,6 @@ title: API
 
 ## Get a report
 
-**Endpoint:** /reporst/:id
+**Endpoint:** /reports/:id
 
 **Method:** GET
