@@ -27,3 +27,55 @@ Currently the default config file looks like this:
 ```
 
 As you can see above, there's a `index_file_path` key. This is the key that points to the panel's `index.html` file. If you've modified this file, keep in mind that if you start any of the keys - that ends with `_path` - without a `/` it'll be relative to the config file. For instance, if your config file's path is `/home/mammamia/configs/config.json` then index file's path will be `/home/mammamia/configs/index.html`.
+
+### Getting and building the panel
+#### Prerequisites
+You'll need to have
+- Git
+- NodeJS
+
+installed.
+
+#### Clone the repository
+Open up your terminal and clone the repository,
+```shell
+git clone https://github.com/gokayokyay/stewardx-panel
+cd stewardx-panel
+```
+
+Now install the dependencies with
+```shell
+npm install
+```
+
+If you use yarn then run
+```shell
+yarn
+```
+
+After the installation completed now build it,
+```shell
+npm run build
+# or if you use yarn
+yarn build
+```
+
+This will create two different directories. Remember that at the time of writing, StewardX will load **only one html file**. Therefore build script has two stages. First it builds the React app (react-scripts) outputting to `build` directory then gulp inlines all of the stuff in build directory to a single html file, outputting to `dist` directory. So the final file will be `stewardx-panel/dist/index.html`.
+
+After the build stage is complete now we can
+
+### Move the index file to the config path
+
+If you changed the index file path in StewardX config, then move the dist file to the path of `index_file_path`.
+If you're still using the defaults, open up a terminal and paste the following:
+```shell
+if [[ -z "${STEWARDX_CONFIG}" ]]; then
+  INDEX_DIRECTORY="${HOME}/.config/stewardx/"
+else
+  INDEX_DIRECTORY="$(dirname $STEWARDX_CONFIG)/"
+fi
+mkdir -p $INDEX_DIRECTORY
+mv dist/index.html $INDEX_DIRECTORY
+```
+
+Now, run StewardX and navigate to `https://$STEWARDX_SERVER_HOST:$STEWARDX_SERVER_PORT/app`, the default URL is: `http://localhost:3000/app`.
