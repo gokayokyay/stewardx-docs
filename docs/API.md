@@ -143,7 +143,7 @@ title: API
 **Method:** GET
 
 
-## Get a report
+### Get a report
 
 **Endpoint:** /reports/:id
 
