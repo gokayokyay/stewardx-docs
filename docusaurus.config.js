@@ -14,7 +14,7 @@ module.exports = {
       title: 'StewardX',
       logo: {
         alt: 'StewardX Logo',
-        src: 'img/logo.svg',
+        src: 'img/stewardx-logo.svg',
       },
       items: [
         {
