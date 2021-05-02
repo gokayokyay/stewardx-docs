@@ -23,3 +23,4 @@ StewardX consist these features:
 | panel 	| Enables the `panel` feature which is a MVP frontend for StewardX. This feature wraps the `server` feature too. Server feature is basically the API. ***NOTE***: You'll need to add the index.html file path to the config file. 	| Enabled. 	|
 | server 	| It is the API. 	| Enabled. 	|
 | cmd 	| This feature is for the command line tasks. 	| Enabled. 	|
+| server-crud | This feature enables the Create - Read - Update - Delete routes of the server.   | Enabled.  |
