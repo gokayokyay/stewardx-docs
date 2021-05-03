@@ -74,7 +74,7 @@ module.exports = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()} StewardX, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} StewardX contributors. Built with Docusaurus.`,
     },
   },
   presets: [
