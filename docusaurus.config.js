@@ -1,7 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'StewardX',
-  tagline: 'Your new friendly scheduler',
+  tagline: 'Your new automation buddy',
+  plugins: ['@docusaurus/plugin-google-analytics'],
   url: 'https://stewardx.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -75,6 +76,11 @@ module.exports = {
       //   },
       // ],
       copyright: `Copyright © ${new Date().getFullYear()} StewardX contributors. Built with Docusaurus.`,
+    },
+    googleAnalytics: {
+      trackingID: 'UA-156797492-2',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
     },
   },
   presets: [
