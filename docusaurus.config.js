@@ -2,7 +2,6 @@
 module.exports = {
   title: 'StewardX',
   tagline: 'Your new automation buddy',
-  plugins: ['@docusaurus/plugin-google-analytics'],
   url: 'https://stewardx.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
